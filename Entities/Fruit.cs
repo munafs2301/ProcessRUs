@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using ProcessRUs.Helpers;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProcessRUs.Entities
 {
@@ -8,6 +9,7 @@ namespace ProcessRUs.Entities
         [Required]
         public int Id { get; set; }
         public string Name { get; set; }
+        public FruitType Type { get; set; }
 
     }
 }
